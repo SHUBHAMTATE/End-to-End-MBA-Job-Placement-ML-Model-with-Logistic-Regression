@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Job Placement Predictor after MBA Degree</title>
+     <style>
+         body {
+            background-color: rgb(153, 255, 255);;
+             /* background-size: cover;
+             background-repeat: no-repeat;
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0; */
+         }
+         h1 {
+             text-align: center;
+             margin-top: 20px;
+         }
+         form {
+             background-color: rgba(224, 255, 255, 0.9);
+             padding: 20px;
+             margin: 0 auto;
+             max-width: 500px;
+             border-radius: 10px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+         }
+         select, input {
+             width: 100%;
+             padding: 10px;
+             margin-bottom: 10px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+         }
+         .predict {
+             background-color: #007BFF;
+             color: white;
+             border: none;
+             padding: 10px 230px;
+             border-radius: 5px;
+             cursor: pointer;
+             /* height: 100vh; */
+         }
+         .predict:hover {
+             background-color: #0056b3;
+         }
+     </style>
+ </head>
+ <body>
+     <h1>Job Placement Predictor after MBA Degree</h1>
+     <form action="/predict" method="post">
+         <label for="gender">Select Your Gender:</label>
+         <select name="GENDER" id="gender">
+             <option value="M">Male</option>
+             <option value="F">Female</option>
+         </select>
+ 
+         <label for="sscmarks">Enter Your SSC Percentage:</label>
+         <input type="text" name="sscmarks" id="sscmarks">
+ 
+         <label for="sscboard">Enter Your SSC Board:</label>
+         <select name="sscboard" id="sscboard">
+             <option value="Central">Central</option>
+             <option value="Other">Other</option>
+         </select>
+ 
+         <label for="hscmarks">Enter Your HSC Percentage:</label>
+         <input type="text" name="hscmarks" id="hscmarks">
+ 
+         <label for="hscboard">Enter Your HSC Board:</label>
+         <select name="hscboard" id="hscboard">
+             <option value="Central">Central</option>
+             <option value="Other">Other</option>
+         </select>
+ 
+         <label for="subject">Enter Your Subjects:</label>
+         <select name="subject" id="subject">
+             <option value="Commerce">Commerce</option>
+             <option value="Science">Science</option>
+             <option value="Arts">Arts</option>
+         </select>
+ 
+         <label for="degreemarks">Enter Your Degree Percentage:</label>
+         <input type="text" name="degreemarks" id="degreemarks">
+ 
+         <label for="degree">Enter Your Degree:</label>
+         <select name="degree" id="degree">
+             <option value="Comm&mgmt">Comm & Management</option>
+             <option value="Sci&Tech">Science & Technology</option>
+             <option value="Other">Other</option>
+         </select>
+ 
+         <label for="experience">Do You Have Work Experience?</label>
+         <select name="Experience" id="experience">
+             <option value="YES">YES</option>
+             <option value="NO">NO</option>
+         </select>
+ 
+         <label for="empmarks">Enter Your Employment Test Percentage:</label>
+         <input type="text" name="empmarks" id="empmarks">
+ 
+         <label for="specialisation">Enter Your Specialization:</label>
+         <select name="specialisation" id="specialisation">
+             <option value="MKt&fin">Mkt & Finance</option>
+             <option value="MKt&HR">Mkt & HR</option>
+         </select>
+ 
+         <label for="mba_percent">Enter Your MBA Percentage:</label>
+         <input type="text" name="mba_percent" id="mba_percent">
+ 
+         <button type="submit" class="predict">Predict</button>
+     </form>
+ </body>
+ </html>
+ 
