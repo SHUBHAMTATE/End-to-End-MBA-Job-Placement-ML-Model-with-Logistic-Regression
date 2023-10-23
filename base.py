@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
-
+#create app
 app = Flask(__name__)
 
 def prediction_input_data(input_df):
@@ -50,7 +50,6 @@ def get_input_data():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
 
 
 
