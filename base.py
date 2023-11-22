@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
-import pickle
+import pickle #import pickle 
 #create app
 app = Flask(__name__)
 
