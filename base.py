@@ -44,7 +44,7 @@ def get_input_data():
                             columns=['gender', 'ssc_percentage', 'ssc_board', 'hsc_percentage', 'hsc_board',
                                     'hsc_subject', 'degree_percentage', 'undergrad_degree','work_experience', 'emp_test_percentage', 'specialisation','mba_percent'])
 
-    # Make predictions and pass the result to the display template
+    # Make predictions and pass the result to the display template 
     ans = prediction_input_data(input_df)
     return render_template("display.html", data=ans)
 
